@@ -1,0 +1,6 @@
+framework module TagControl {
+  umbrella header "TagControl-umbrella.h"
+
+  export *
+  module * { export * }
+}
