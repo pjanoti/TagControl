@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "TagControl"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "It is a custom tag view. It can add and delete tags from view."
   s.description  = "It is a custom tag view. It can add and delete tags from view. you can set the different properties of TagControl like `backGroundColor`, `separatorView.backGroundColor etc if you need to customize it otherwise it will take default values."
 

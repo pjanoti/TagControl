@@ -51,7 +51,7 @@ At this point `TagControl ` iOS Component is ready for use in your project.
 
 ***Step 1.*** Go to your `ViewController.swift` & `import TagControl`
 
-***Step 2.*** Go to your `ViewController.swift` & add `TagControl `
+***Step 2.*** Go to your `ViewController.swift` & add `TagViewDelegate `
 
 ***Step 3.*** Create a variable of type `TagView`
 
@@ -115,4 +115,12 @@ At this point `TagControl ` iOS Component is ready for use in your project.
 
 ```
 ####Here we have tag control :)
+
+ ![](TagControl.gif)  
+ 
+ 
+ 
+###ScreenShot -
+ 
  ![](img.png)
+ 

@@ -162,6 +162,7 @@
 				0D1698311E40B597004AF21D /* Resources */,
 				AE54144280507B64E004B307 /* [CP] Embed Pods Frameworks */,
 				8C87EF3F13CF549FF64F3FEF /* [CP] Copy Pods Resources */,
+				0D1698641E41AD07004AF21D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -285,6 +286,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0D1698641E41AD07004AF21D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
 		275D9156FBF69002F2D55C3D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -490,6 +504,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 830418A734D94E2F5193FF6C /* Pods-TagControlDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JXDJP7TCHU;
 				INFOPLIST_FILE = TagControlDemo/Info.plist;
@@ -504,6 +519,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3962C4F1C2CC3A1117FD0EEC /* Pods-TagControlDemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JXDJP7TCHU;
 				INFOPLIST_FILE = TagControlDemo/Info.plist;
@@ -591,6 +607,7 @@
 				0D16985D1E40B597004AF21D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D16985E1E40B597004AF21D /* Build configuration list for PBXNativeTarget "TagControlDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -599,6 +616,7 @@
 				0D1698601E40B597004AF21D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D1698611E40B597004AF21D /* Build configuration list for PBXNativeTarget "TagControlDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -607,6 +625,7 @@
 				0D1698631E40B597004AF21D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -22,12 +22,11 @@ class ViewController: UIViewController, TagViewDelegate {
         // Dispose of any resources that can be recreated.
     }
 
-
     @IBAction func btnShowTagTapped(_ sender: Any) {
         self.addTagView()
 
     }
-    
+
     func addTagView() {
         if self.tagView != nil {
             self.tagView?.removeFromSuperview()
@@ -38,33 +37,30 @@ class ViewController: UIViewController, TagViewDelegate {
         self.view.addSubview(self.tagView!)
         self.tagView?.setupInitialConstraintWRTView(self.view)
     }
-    
+
     func tagViewContents() -> [String]? {
         var tags = [String]()
         tags = ["Prema", "Photography", "Design", "Humor", "Love Traveling", "Music", "Writing", "Easy Life", "Education", "Engineer", "Startup", "Funny", "Women In Tech", "Female", "Business", "Songs", "Love", "Food", "Sports"]
         return tags
-        
+
     }
-    
+
     func removeTagView() {
         if self.tagView != nil {
             self.tagView?.removeFromSuperview()
             self.tagView = nil
         }
     }
-    
+
     // MARK: TagView Delegates
-    
+
     func didTapDoneButton(selectedTags: [String]) {
         print(selectedTags)
         self.removeTagView()
     }
-    
+
     func didTapCancelButton() {
         self.removeTagView()
     }
-    
-   
 
 }
-
